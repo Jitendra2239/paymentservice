@@ -3,13 +3,7 @@ pipeline {
     agent { label 'ec2-agent' }
 
     stages {
-        stage('hello'){
-            steps {
-                script {
-                    hello()
-                }
-            }
-        }
+        
         stage('Checkout') {
             steps {
                 script {
